@@ -4,24 +4,26 @@ import { NavLink } from "react-router-dom";
 class Header extends Component {
   active = {
     fontWeight: "bold",
-    color: "red"
+    color: "gray"
   };
 
   header = {
-    display: "flex",
     justifyContent: "space-evenly",
-    listStyle: "none"
+    listStyle: "none",
+    backgroundColor: "gray",
+    width: "100%",
   };
+
   render() {
     return (
-      <div style={this.header}>
+      <nav className={"navbar navbar-expand-lg navbar-dark bg-dark header-css"} style={this.header}>
         <NavLink exact to="/" activeStyle={this.active}>
           Home
         </NavLink>
-        <NavLink to="/posts" activeStyle={this.active}>
-          Posts
+        <NavLink to="/scores" activeStyle={this.active}>
+          Scores
         </NavLink>
-      </div>
+      </nav>
     );
   }
 }

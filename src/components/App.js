@@ -1,13 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
+import 'babel-polyfill';
 
-class App extends Component {
-  render() {
-    return (
-      <div style={{ textAlign: "center", marginTop: "10rem" }}>
-        <h1>App is there</h1>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div style={{ textAlign: "center", marginTop: "10rem" }}>
+    <h1>App is there</h1>
+  </div>);
 
 export default App;

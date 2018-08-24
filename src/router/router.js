@@ -1,7 +1,7 @@
 import React from "react";
 import { Route } from "react-router-dom";
 import App from "../components/App";
-import Posts from "../components/Posts";
+import Scores from "../components/Scores";
 import Header from "../header";
 
 class ReactRouter extends React.Component {
@@ -10,7 +10,7 @@ class ReactRouter extends React.Component {
       <React.Fragment>
         <Header />
         <Route exact path="/" component={App} />
-        <Route  path="/posts" component={Posts} />
+        <Route  path="/scores" component={Scores} />
       </React.Fragment>
     );
   }
