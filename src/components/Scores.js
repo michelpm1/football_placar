@@ -12,7 +12,6 @@ class Scores extends React.PureComponent {
     this.handleChange = this.handleChange.bind(this);
     this.state = {
       scores: {},
-      tableVisible: false,
       code: '',
       header: {
         headers: {

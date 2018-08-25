@@ -7,16 +7,9 @@ class Header extends Component {
     color: "gray"
   };
 
-  header = {
-    justifyContent: "space-evenly",
-    listStyle: "none",
-    backgroundColor: "gray",
-    width: "100%",
-  };
-
   render() {
     return (
-      <nav className={"navbar navbar-expand-lg navbar-dark bg-dark header-css"} style={this.header}>
+      <nav className={"navbar navbar-expand-lg navbar-dark bg-dark header-nav"}>
         <NavLink exact to="/" activeStyle={this.active}>
           Info
         </NavLink>

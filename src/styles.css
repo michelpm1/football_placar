@@ -11,3 +11,15 @@ a:hover { color: gray !important; }
     text-align: center;
     margin-top: 3rem;
 }
+
+.header-nav {
+    justify-content: space-evenly;
+    list-style: none;
+    background-color: gray;
+    width: 100%;
+}
+
+.default-table-1 {
+    text-align: center;
+    margin-top: 3rem;
+}

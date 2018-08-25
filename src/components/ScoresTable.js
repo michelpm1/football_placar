@@ -4,7 +4,7 @@ const ScoresTable = (props) => {
   const {scores} = props;
 
   return (
-    <div style={{ textAlign: "center",marginTop:'3rem' }}>
+    <div className={"default-table-1"}>
       <h1>{scores.leagueCaption}</h1>
       <table className="mt-4 table table-striped">
         <thead>
