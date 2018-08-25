@@ -27,12 +27,20 @@ Then run:
 
 `$ yarn start`
 
+or
+
+`$ npm start`
+
 
 #### Tests
 
 At project root directory run:
 
 `$ yarn test`
+
+or
+
+`$ npm test`
 
 And press 'a' to run all tests
   
