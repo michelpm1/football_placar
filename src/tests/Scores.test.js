@@ -4,17 +4,16 @@ const scores = new Scores();
 
 describe('Scores component', () => {
 
-  it('Should return status 200', () => {
+  it('Should return status 200 if correct code', () => {
     scores.getScores(444).then((result) => {
-      console.log(result.status);
       expect(result.status).toBe(200);
     })
   });
 
-  it('Should return status 400', () => {
-    scores.getScores('@&@*').then((result) => {
-      console.log(result.response.status);
-      expect(result.response.status).toBe(400);
-    })
-  })
+  it('Should return status 400 if random code', () => {
+    scores.getScores('@&@*').then(() => {
+    }).catch( (err) => {
+      expect(err.response.status).toBe(400);
+    });
+  });
 });

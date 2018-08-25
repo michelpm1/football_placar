@@ -23,14 +23,12 @@ class Scores extends React.PureComponent {
   }
 
   getScores = (code) => {
-
     const {header} = this.state;
 
     return axios.get(`http://api.football-data.org/v1/competitions/${code}/leagueTable`, header);
   };
 
   handleSubmit(event) {
-
     const {code} = this.state;
 
     if (code) {

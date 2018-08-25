@@ -18,7 +18,7 @@ class Header extends Component {
     return (
       <nav className={"navbar navbar-expand-lg navbar-dark bg-dark header-css"} style={this.header}>
         <NavLink exact to="/" activeStyle={this.active}>
-          Home
+          Info
         </NavLink>
         <NavLink to="/scores" activeStyle={this.active}>
           Scores

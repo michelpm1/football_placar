@@ -1,8 +1,8 @@
 import React from "react";
 
 const ScoresTable = (props) => {
-
   const {scores} = props;
+
   return (
     <div style={{ textAlign: "center",marginTop:'3rem' }}>
       <h1>{scores.leagueCaption}</h1>

@@ -6,3 +6,8 @@ body {
 a { color: white !important; }
 
 a:hover { color: gray !important; }
+
+.tittle {
+    text-align: center;
+    margin-top: 3rem;
+}
