@@ -13,10 +13,7 @@ a:hover { color: gray !important; }
 }
 
 .header-nav {
-    justify-content: space-evenly;
-    list-style: none;
-    background-color: gray;
-    width: 100%;
+    justify-content: space-evenly !important;
 }
 
 .default-table-1 {
