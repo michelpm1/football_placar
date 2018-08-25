@@ -4,7 +4,6 @@ import ScoresTable from "./ScoresTable";
 import { isEmpty } from "lodash";
 import { warning, error } from "toastr";
 import 'toastr/build/toastr.css';
-
 class Scores extends React.PureComponent {
 
   constructor(props) {
@@ -27,7 +26,7 @@ class Scores extends React.PureComponent {
 
     const {header} = this.state;
 
-         return axios.get(`http://api.football-data.org/v1/competitions/${code}/leagueTable`, header);
+    return axios.get(`http://api.football-data.org/v1/competitions/${code}/leagueTable`, header);
   };
 
   handleSubmit(event) {

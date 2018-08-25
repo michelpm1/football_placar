@@ -1,15 +1,20 @@
 import React from 'react';
-// import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer'
 import Scores from '../components/Scores';
+const scores = new Scores();
 
-describe('Socres component', () => {
-  it('Should return a object containing competition', () => {
-    const scores = new Scores();
+describe('Scores component', () => {
 
+  it('Should return status 200', () => {
     scores.getScores(444).then((result) => {
-      console.log(result);
-      expect(result.data.competition.name).toEqual('Campeonato Brasileiro 2018');
+      console.log(result.status);
+      expect(result.status).toBe(200);
+    })
+  });
+
+  it('Should return status 400', () => {
+    scores.getScores('@&@*').then((result) => {
+      console.log(result.response.status);
+      expect(result.response.status).toBe(400);
     })
   })
 });
